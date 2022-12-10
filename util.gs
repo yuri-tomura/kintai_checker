@@ -1,19 +1,19 @@
 // Unix時間を取得する
 function getUnixTime(dateTime) {
-	var date = new Date(dateTime);
-	var millisec = date.getTime();
-	var sec = millisec / 1000;
-	var time = sec.toString();
+	const date = new Date(dateTime);
+	const millisec = date.getTime();
+	const sec = millisec / 1000;
+	const time = sec.toString();
 	return time;
 }
 
 // 本日の日付をY/M/Dの形式で返却する
 function getToday() {
-	var d = new Date();
-	var y = d.getFullYear();
-	var mon = d.getMonth() + 1;
-	var d2 = d.getDate();
-	var today = y + '/' + mon + '/' + d2;
+	const d = new Date();
+	const y = d.getFullYear();
+	const mon = d.getMonth() + 1;
+	const d2 = d.getDate();
+	const today = y + '/' + mon + '/' + d2;
 	return today;
 }
 
